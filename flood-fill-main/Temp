@@ -1,0 +1,15 @@
+def all_even(ar):
+    '''
+    all_even([ ]) = True
+    all_even([ 2, 4, 6]) = True
+    all_even([ 2, 3, 4, 6 ]) = False
+    all_even([ -2, 0, 2, 8]) = True
+    '''
+    new_list = []
+    for el in ar:
+        if (el % 2) == 0:
+             new_list.append(True)
+    new_list.append(False)
+    if any(new_list == False):
+        return False
+    return True
